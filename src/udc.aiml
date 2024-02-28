@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- Initiate Chat -->
+    <category>
+        <pattern>WHAT COMPUTING JOBS ARE RIGHT FOR ME</pattern>
+        <template>
+            To help you decide, I need to know more about your interests and strengths. Do you prefer coding, analyzing data, managing networks, focusing on cybersecurity, or researching new AI technologies?
+        </template>
+    </category>
+    
+    <!-- Software Developer -->   
+    <category>
+        <pattern>I PREFER CODING</pattern>
+        <template>
+            It sounds like you might enjoy being a Software Developer. This role involves designing, coding, and testing software and requires strong programming skills. Are you interested in this field?
+        </template>   
+    </category>
+    
+    <!-- Data Scientist -->
+    <category>
+        <pattern>I PREFER ANALYZING DATA</pattern>
+        <template>
+            You might be well-suited for a career in Data Science. This job involves analyzing data sets to derive insights and requires knowledge of statistics, machine learning, and data visualization. Are you interested in this field?
+        </template>
+    </category>
+    
+    <!-- Network Administrator -->
+    <category>
+        <pattern>I PREFER MANAGING NETWORKS</pattern>
+        <template>
+            Consider a career as a Network Administrator. This role involves managing and maintaining computer networks and requires skills in network configuration, security, and troubleshooting. Are you interested in this field?
+        </template>
+    </category>
+    
+    <!-- Cybersecurity Analyst -->
+    <category>
+        <pattern>I PREFER FOCUSING ON CYBERSECURITY</pattern>
+        <template>
+            A role as a Cybersecurity Analyst might interest you. This job is about protecting systems from cyber threats and requires knowledge of security protocols, risk management, and incident response. Are you interested in this field?
+        </template>
+    </category>
+    
+    <!-- AI Researcher -->
+    <category>
+        <pattern>I PREFER RESEARCHING NEW AI TECHNOLOGIES</pattern>
+        <template>
+            You might be inclined towards becoming an AI Researcher. This role focuses on developing AI technologies and requires knowledge of machine learning algorithms and neural networks. Are you interested in this field?
+        </template>
+    </category>
+    
+    <!-- Yes to Career Suggestion -->
+    <category>
+        <pattern>YES</pattern>
+        <that>Are you interested in this field?</that>
+        <template>
+            Great! As a next step, you might want to look into relevant educational courses or training programs to enhance your skills in this area. Is there anything else you'd like to know about this career path?
+        </template>
+    </category>
+    
+    <!-- No to Career Suggestion -->
+    <category>
+        <pattern>NO</pattern>
+        <that>Are you interested in this field?</that>
+        <template>
+            No problem. Let's explore other options. Are you more interested in a different aspect of computing like data analysis, network management, cybersecurity, or AI research?
+        </template>
+    </category>
+    
+    <!-- Yes General Response -->
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            Great! Could you specify which aspect of computing or career path you are saying 'yes' to? This will help me provide more detailed information.
+        </template>
+    </category>
+    
+    <!-- No General Response -->
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            Okay, let's try a different approach. Could you tell me more about what you are looking for in a computing career? This will help me better understand your interests.
+        </template>
+    </category>
+    
+    <!-- Follow-up for Further Clarification -->
+    <category>
+        <pattern>TELL ME MORE</pattern>
+        <template>
+            Sure! Which computing career are you interested in learning more about? Software development, data science, network administration, cybersecurity, or AI research?
+        </template>
+    </category>
+    
+    <!-- Resource Recommendations -->
+    <category>
+        <pattern>CAN YOU RECOMMEND RESOURCES FOR *</pattern>
+        <template>
+            Absolutely! For <star/>, I suggest checking out [specific websites, online courses, books, forums]. These resources are great for beginners and advanced learners alike. Would you like more specific recommendations?
+        </template>
+    </category>
+
+    <!-- Not Sure Response -->
+   <category>
+        <pattern>I AM NOT SURE</pattern>
+        <template>
+            That's okay! Exploring different fields is a great way to find your passion. Would you like a brief overview of each computing career to help you decide?
+        </template>
+    </category>
+    
+    <!-- Default: No Match Found Answer -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I'm not sure which computing career is the best fit for you. Could you tell me more about your interests and skills in technology?
+        </template>
+    </category>
+    
+    <!-- Case 1: Student Good at Coding, but Unsure about Career -->
+    <category>
+        <pattern>I AM GOOD AT CODING BUT UNSURE ABOUT MY CAREER</pattern>
+        <template>
+            Since you have strong coding skills, you might excel in areas like software development or AI research. These fields require extensive programming knowledge. Which of these areas interests you more?
+        </template>
+    </category>
+    
+    <!-- Case 2: Student Likes Technology, but not Math -->
+    <category>
+        <pattern>I LIKE TECHNOLOGY BUT NOT MATH</pattern>
+        <template>
+            If you're interested in technology but prefer less math-intensive roles, consider exploring network administration or cybersecurity. These fields focus more on practical skills and less on complex mathematics. Would you like to know more about these options?
+        </template>
+    </category>
+    
+</aiml>
